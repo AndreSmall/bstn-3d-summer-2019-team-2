@@ -1,5 +1,5 @@
 import React from 'react';
-import tableau from 'tableau-api';
+
 import { Redirect } from "react-router-dom";
 import Graph1 from './Graph1.js'
 import Graph2 from './Graph2.js'
