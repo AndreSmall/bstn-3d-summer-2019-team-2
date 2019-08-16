@@ -3,7 +3,7 @@ import './App.css';
 import MainPage from "./components/MainPage/MainPage";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Graph from './components/Graph/Graph.js'
-
+import "./components/MainPage/MainPage.scss";
 
 function App() {
   return (

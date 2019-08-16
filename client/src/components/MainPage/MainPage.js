@@ -1,20 +1,22 @@
 import React from "react";
-import './MainPage.scss';
+import "./MainPage.scss";
+import Header from "../Header/Header";
 import Button from "./Button"
+import {Link } from 'react-router-dom';
 class MainPage extends React.Component {
-  
-    render () {
+  render() {
+    return (
+      <div className="main-page">
+        <Header />
+        <div className="body">
+          <div className="text">IMPROVE YOUR DIGITAL SERVICES. </div>
+          <div className="text">INCREASE YOUR COMPETITIVE EDGE. </div>
+          <Link to="/graph"><button className="B">Button</button></Link>
+        </div>
         
-        return (
-            <>
-            <div className="mainpage-wrapper">
-            <input type="text" name="mainPageInput" placeholder="Search"/>
-            <button className="mainpage-wrapper__button" onClick={this.toggle} type="button" name="mainPageButton">Enter</button>
-            </div>
-            <Button />
-            </>
-        )
-    }
+      </div>
+    );
+  }
 }
 
 export default MainPage;

@@ -1,5 +1,5 @@
 import React from 'react';
-import tableau from 'tableau-api';
+
 import { Redirect } from "react-router-dom";
 
 class Graph extends React.Component {

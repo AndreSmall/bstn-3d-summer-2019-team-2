@@ -22,7 +22,7 @@ class Button extends React.Component {
     return (
       <>
         <button className={classVariable} onClick={this.toggle} type="button">
-          hello world
+        {this.props.buttonName}
         </button>
       </>
     );
