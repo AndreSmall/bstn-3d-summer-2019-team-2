@@ -11,7 +11,7 @@ class MainPage extends React.Component {
         <div className="body">
           <div className="text">IMPROVE YOUR DIGITAL SERVICES. </div>
           <div className="text">INCREASE YOUR COMPETITIVE EDGE. </div>
-          <Link to="/graph"><button className="B">Button</button></Link>
+          <Link to="/graph"><button className="B">Explore</button></Link>
         </div>
         
       </div>
