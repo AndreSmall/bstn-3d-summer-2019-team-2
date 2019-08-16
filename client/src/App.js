@@ -1,26 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-//test
+import MainPage from "./components/MainPage/MainPage";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Graph from './components/Graph/Graph.js'
+
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href={`http://localhost:8080/ping`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Local Express Server ping
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={MainPage} />
+          <Route path="/graph" component={Graph} />
+        </Switch>
+      </BrowserRouter>
+    </>
   );
 }
 
