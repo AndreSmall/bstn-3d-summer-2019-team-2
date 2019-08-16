@@ -1,10 +1,19 @@
 import React from 'react';
 import './App.css';
 import MainPage from "./components/MainPage/MainPage";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Graph from './components/Graph/Graph.js'
+
+
 function App() {
   return (
-   <>
-    <MainPage />
+    <>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={MainPage} />
+          <Route path="/graph" component={Graph} />
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }
